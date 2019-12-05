@@ -10,13 +10,16 @@ import UIKit
 
 class LoginFormViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let hideKeybboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         scrollView.addGestureRecognizer(hideKeybboardGesture)
     }
@@ -34,7 +37,15 @@ class LoginFormViewController: UIViewController {
         
     }
     
+    // MARK: - Sign In functions
+    
     @IBAction func signInButton(_ sender: Any) {
+        if checkUserData() {
+            print(#function)
+        }
+        else {
+            showAlertWindow()
+        }
     }
     
     func checkUserData() -> Bool {
@@ -45,6 +56,15 @@ class LoginFormViewController: UIViewController {
         }
         return false
     }
+    
+    func showAlertWindow() {
+        let alertWindow = UIAlertController(title: "Error", message: "Wrong login or password", preferredStyle: .alert)
+        let alertButton = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertWindow.addAction(alertButton)
+        present(alertWindow, animated: true, completion: nil)
+    }
+    
+    // MARK: - Keyboard Functions
     
     @objc func keyboardWasShown(notification: Notification) {
         let info = notification.userInfo! as NSDictionary
