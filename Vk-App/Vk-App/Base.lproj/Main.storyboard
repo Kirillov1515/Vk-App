@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QTK-aI-KoN">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login Form View Controller-->
+        <scene sceneID="xXD-4U-t6k">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="QTK-aI-KoN" customClass="LoginFormViewController" customModule="Vk_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Kp-qv-WSL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4T-zz-9bG">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7v-lt-vYE">
+                                        <rect key="frame" x="157" y="75" width="61" height="50"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq9-IV-GnL">
+                                        <rect key="frame" x="157.33333333333334" y="175" width="60.333333333333343" height="20"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZy-we-Ext" userLabel="Login TextField">
+                                        <rect key="frame" x="87.666666666666686" y="215" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="S9d-y4-Qiv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khE-Lx-EQN">
+                                        <rect key="frame" x="139" y="279" width="97" height="20"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnI-4y-vmW" userLabel="Password TextField">
+                                        <rect key="frame" x="87.666666666666686" y="319" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="hXn-Mz-g6Y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQk-Lw-eRU">
+                                        <rect key="frame" x="145" y="393" width="85" height="32"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInButton:" destination="QTK-aI-KoN" eventType="touchUpInside" id="rhA-3C-INw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-iJ-vbB">
+                                        <rect key="frame" x="145" y="445" width="85" height="32"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KZy-we-Ext" firstAttribute="top" secondItem="dq9-IV-GnL" secondAttribute="bottom" constant="20" id="4Mx-v8-Xco"/>
+                                    <constraint firstItem="5aZ-iJ-vbB" firstAttribute="top" secondItem="dQk-Lw-eRU" secondAttribute="bottom" constant="20" id="OXO-Nh-Z6E"/>
+                                    <constraint firstItem="qnI-4y-vmW" firstAttribute="top" secondItem="khE-Lx-EQN" secondAttribute="bottom" constant="20" id="Tb8-yJ-yne"/>
+                                    <constraint firstItem="dQk-Lw-eRU" firstAttribute="top" secondItem="qnI-4y-vmW" secondAttribute="bottom" constant="40" id="V3J-eY-G8T"/>
+                                    <constraint firstItem="dq9-IV-GnL" firstAttribute="top" secondItem="c7v-lt-vYE" secondAttribute="bottom" constant="50" id="afC-6c-Wnr"/>
+                                    <constraint firstAttribute="bottom" secondItem="5aZ-iJ-vbB" secondAttribute="bottom" constant="10" id="egQ-aw-Xpr"/>
+                                    <constraint firstItem="c7v-lt-vYE" firstAttribute="top" secondItem="c4T-zz-9bG" secondAttribute="top" constant="75" id="fb7-6V-78W"/>
+                                    <constraint firstItem="khE-Lx-EQN" firstAttribute="top" secondItem="KZy-we-Ext" secondAttribute="bottom" constant="30" id="tgC-55-BdL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5aZ-iJ-vbB" firstAttribute="centerX" secondItem="kZJ-zj-jbw" secondAttribute="centerX" id="6lM-eE-ERZ"/>
+                            <constraint firstItem="khE-Lx-EQN" firstAttribute="centerX" secondItem="kZJ-zj-jbw" secondAttribute="centerX" id="749-BP-Ufg"/>
+                            <constraint firstItem="qnI-4y-vmW" firstAttribute="centerX" secondItem="kZJ-zj-jbw" secondAttribute="centerX" id="Ah0-2f-dfZ"/>
+                            <constraint firstItem="KZy-we-Ext" firstAttribute="centerX" secondItem="kZJ-zj-jbw" secondAttribute="centerX" id="NNc-S1-HGE"/>
+                            <constraint firstItem="kZJ-zj-jbw" firstAttribute="bottom" secondItem="c4T-zz-9bG" secondAttribute="bottom" id="OAz-Vh-vBo"/>
+                            <constraint firstItem="c4T-zz-9bG" firstAttribute="leading" secondItem="kZJ-zj-jbw" secondAttribute="leading" id="QOl-i2-yXM"/>
+                            <constraint firstItem="dQk-Lw-eRU" firstAttribute="centerX" secondItem="kZJ-zj-jbw" secondAttribute="centerX" id="UBF-ke-cXM"/>
+                            <constraint firstItem="c4T-zz-9bG" firstAttribute="width" secondItem="8Kp-qv-WSL" secondAttribute="width" id="Yv8-vS-SV1"/>
+                            <constraint firstItem="c4T-zz-9bG" firstAttribute="top" secondItem="kZJ-zj-jbw" secondAttribute="top" id="bS2-kD-Jw2"/>
+                            <constraint firstItem="dq9-IV-GnL" firstAttribute="centerX" secondItem="kZJ-zj-jbw" secondAttribute="centerX" id="eOu-Au-sCr"/>
+                            <constraint firstItem="kZJ-zj-jbw" firstAttribute="trailing" secondItem="c4T-zz-9bG" secondAttribute="trailing" id="mwO-ax-vEb"/>
+                            <constraint firstItem="c7v-lt-vYE" firstAttribute="centerX" secondItem="kZJ-zj-jbw" secondAttribute="centerX" id="pur-zB-yuW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kZJ-zj-jbw"/>
                     </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="KZy-we-Ext" id="h0a-X5-qT7"/>
+                        <outlet property="passwordTextField" destination="qnI-4y-vmW" id="iWr-cU-eOT"/>
+                        <outlet property="scrollView" destination="c4T-zz-9bG" id="DnK-Dw-LhY"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wja-tW-z1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="166.25615763546799"/>
         </scene>
     </scenes>
 </document>
