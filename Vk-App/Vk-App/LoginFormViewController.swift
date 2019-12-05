@@ -41,7 +41,7 @@ class LoginFormViewController: UIViewController {
     
     @IBAction func signInButton(_ sender: Any) {
         if checkUserData() {
-            print(#function)
+            performSegue(withIdentifier: "signInSegue", sender: self)
         }
         else {
             showAlertWindow()
@@ -81,5 +81,10 @@ class LoginFormViewController: UIViewController {
     
     @objc func hideKeyboard() {
         scrollView.endEditing(true)
+    }
+    
+    // MARK: - Unwind segue
+    
+    @IBAction func exitToLoginForm(unwindsegue: UIStoryboardSegue) {
     }
 }
