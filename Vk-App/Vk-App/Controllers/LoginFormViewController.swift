@@ -83,7 +83,7 @@ class LoginFormViewController: UIViewController {
         scrollView.endEditing(true)
     }
     
-    // MARK: - Unwind segue
+    // MARK: - Exit to Login Form segue
     
     @IBAction func exitToLoginForm(unwindsegue: UIStoryboardSegue) {
     }
