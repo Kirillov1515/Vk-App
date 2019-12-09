@@ -430,6 +430,7 @@
                                 <connections>
                                     <outlet property="allGroupsAvatar" destination="Sba-Rq-3iG" id="CCw-yq-c5N"/>
                                     <outlet property="allGroupsName" destination="DSR-3A-4ab" id="qqB-qo-5kD"/>
+                                    <segue destination="XYc-Lo-zhy" kind="unwind" identifier="addGroup" unwindAction="addGroupWithUnwindsegue:" id="ejD-3D-MYU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -441,6 +442,7 @@
                     <navigationItem key="navigationItem" title="All groups" id="F3d-FT-dnS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAP-fr-tC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="XYc-Lo-zhy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3712.8000000000002" y="871.92118226600985"/>
         </scene>
