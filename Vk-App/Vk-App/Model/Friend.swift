@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct Friend {
+    var avatarPath: String
+    var name: String
+}

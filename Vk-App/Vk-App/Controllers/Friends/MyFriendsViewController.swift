@@ -9,26 +9,25 @@
 import UIKit
 
 class MyFriendsViewController: UIViewController {
-    
-    let arrayFriends = ["Sasha", "Tanya", "qwerty"]
 
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.register(MyFreindsTableViewCell.self, forCellReuseIdentifier: "MyFreindsTableViewCell")
     }
 
 }
 
 extension MyFriendsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayFriends.count
+        return listOfMyFriends.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyFriendsTableViewCell", for: indexPath) as! MyFreindsTableViewCell
-        cell.myFriendsName?.text = arrayFriends[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyFreindsTableViewCell", for: indexPath) as! MyFreindsTableViewCell
+        cell.myFriendsAvatar.image = UIImage(named: listOfMyFriends[indexPath.row].name)
+        cell.myFriendsName.text = listOfMyFriends[indexPath.row].name
         return cell
     }
     
