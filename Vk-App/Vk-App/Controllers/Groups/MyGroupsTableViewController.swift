@@ -21,7 +21,7 @@ class MyGroupsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroupsTableViewCell", for: indexPath) as! MyGroupsTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroupsTableViewCell", for: indexPath) as? MyGroupsTableViewCell else {return UITableViewCell()}
         cell.myGroupsAvatar.image = UIImage(named: listOfMyGroups[indexPath.row].avatarPath)
         cell.myGroupsName.text = listOfMyGroups[indexPath.row].name
         return cell

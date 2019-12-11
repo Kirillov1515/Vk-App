@@ -1,14 +1,14 @@
 //
-//  MyFreindsTableViewCell.swift
+//  MyFriendsTableViewCell.swift
 //  Vk-App
 //
-//  Created by Macbook on 06/12/2019.
+//  Created by Macbook on 11/12/2019.
 //  Copyright © 2019 AK. All rights reserved.
 //
 
 import UIKit
 
-class MyFreindsTableViewCell: UITableViewCell {
+class MyFriendsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var myFriendsAvatar: UIImageView!
     @IBOutlet weak var myFriendsName: UILabel!
