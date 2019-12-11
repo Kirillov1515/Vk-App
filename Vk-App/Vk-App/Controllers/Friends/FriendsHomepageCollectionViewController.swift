@@ -23,8 +23,8 @@ class FriendsHomepageCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendsHomepageCollectionViewCell", for: indexPath) as? FriendsHomepageCollectionViewCell else {return UICollectionViewCell()}
-        cell.friendsHomepageAvatar.image = UIImage(named: listOfMyFriends[selectedFriend.row].avatarPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendsHomepageCollectionViewCell", for: indexPath) as? FriendsHomepageCollectionViewCell else { return UICollectionViewCell() }
+        cell.friendsHomepageAvatar.image.image = UIImage(named: listOfMyFriends[selectedFriend.row].avatarPath)
         cell.friendsHomepageName.text = listOfMyFriends[selectedFriend.row].name
         return cell
     }

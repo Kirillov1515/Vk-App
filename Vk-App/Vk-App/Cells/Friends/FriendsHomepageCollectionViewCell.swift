@@ -10,6 +10,6 @@ import UIKit
 
 class FriendsHomepageCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var friendsHomepageAvatar: UIImageView!
+    @IBOutlet weak var friendsHomepageAvatar: CircleShadowImage!
     @IBOutlet weak var friendsHomepageName: UILabel!
 }
