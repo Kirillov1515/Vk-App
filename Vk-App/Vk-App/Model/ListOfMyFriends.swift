@@ -31,10 +31,14 @@ var listOfMyFriends = [Friend(avatarPath: "friend1", name: "Abcd"),
                        Friend(avatarPath: "friend3", name: "Tanya")
 ]
 
-//var friendsSection = [Section<Friend>]()
-//
-//let friendsDictionary = Dictionary.init(grouping: listOfMyFriends){
-//    $0.name.prefix(1)
+var friendsSection = [Section<Friend>]()
+
+let friendsDictionary = Dictionary.init(grouping: listOfMyFriends) { $0.name.prefix(1) }
+
+//func makeFriendsSection () {
+//    friendsSection = friendsDictionary.map { Section(title: String($0.key), items: $0.value)}
+//    friendsSection.sort { $0.title < $1.title }
 //}
+
 //friendsSection = friendsDictionary.map { Section(title: String($0.key), items: $0.value)}
 //friendsSection.sort { $0.title < $1.title }

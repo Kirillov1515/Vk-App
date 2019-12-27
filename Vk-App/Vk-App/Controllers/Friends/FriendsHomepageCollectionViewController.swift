@@ -15,9 +15,6 @@ class FriendsHomepageCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let friendsDictionary = Dictionary.init(grouping: listOfMyFriends){
-            $0.name.prefix(1)
-        }
         friendsSection = friendsDictionary.map { Section(title: String($0.key), items: $0.value)}
         friendsSection.sort { $0.title < $1.title }
     }
