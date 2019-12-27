@@ -18,6 +18,13 @@
 		FA64EC96239932D7005537A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA64EC94239932D7005537A0 /* Main.storyboard */; };
 		FA64EC98239932D9005537A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA64EC97239932D9005537A0 /* Assets.xcassets */; };
 		FA64EC9B239932D9005537A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA64EC99239932D9005537A0 /* LaunchScreen.storyboard */; };
+		FA6ECC0723B627C3007A4484 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ECC0623B627C3007A4484 /* NewsTableViewController.swift */; };
+		FA6ECC0B23B62826007A4484 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ECC0923B62826007A4484 /* NewsTableViewCell.swift */; };
+		FA6ECC0C23B62826007A4484 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6ECC0A23B62826007A4484 /* NewsTableViewCell.xib */; };
+		FA6ECC0E23B63246007A4484 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ECC0D23B63246007A4484 /* News.swift */; };
+		FA6ECC1023B632A7007A4484 /* ListOfNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ECC0F23B632A7007A4484 /* ListOfNews.swift */; };
+		FA78E3E523B4D6C5003DA2D6 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78E3E423B4D6C5003DA2D6 /* Section.swift */; };
+		FA78E3E723B52225003DA2D6 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78E3E623B52225003DA2D6 /* LikeButton.swift */; };
 		FA850A4F2399480300DC225E /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA850A4E2399480300DC225E /* LoginFormViewController.swift */; };
 		FA850A552399B76C00DC225E /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA850A542399B76C00DC225E /* MyGroupsTableViewController.swift */; };
 		FA850A572399B7D500DC225E /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA850A562399B7D500DC225E /* AllGroupsTableViewController.swift */; };
@@ -26,6 +33,7 @@
 		FABB83B223A13FE000B0EAB6 /* FriendsHomepageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB83B123A13FE000B0EAB6 /* FriendsHomepageCollectionViewController.swift */; };
 		FABB83B423A1400C00B0EAB6 /* FriendsHomepageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB83B323A1400C00B0EAB6 /* FriendsHomepageCollectionViewCell.swift */; };
 		FADAB1892399D07E0025EF81 /* MyGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAB1882399D07E0025EF81 /* MyGroupsTableViewCell.swift */; };
+		FAE64F4C23A1859C00AE88B7 /* CircleShadowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE64F4B23A1859C00AE88B7 /* CircleShadowImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +50,13 @@
 		FA64EC97239932D9005537A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA64EC9A239932D9005537A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA64EC9C239932D9005537A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6ECC0623B627C3007A4484 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		FA6ECC0923B62826007A4484 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		FA6ECC0A23B62826007A4484 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		FA6ECC0D23B63246007A4484 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		FA6ECC0F23B632A7007A4484 /* ListOfNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfNews.swift; sourceTree = "<group>"; };
+		FA78E3E423B4D6C5003DA2D6 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		FA78E3E623B52225003DA2D6 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		FA850A4E2399480300DC225E /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
 		FA850A542399B76C00DC225E /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewController.swift; sourceTree = "<group>"; };
 		FA850A562399B7D500DC225E /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +65,7 @@
 		FABB83B123A13FE000B0EAB6 /* FriendsHomepageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsHomepageCollectionViewController.swift; sourceTree = "<group>"; };
 		FABB83B323A1400C00B0EAB6 /* FriendsHomepageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsHomepageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FADAB1882399D07E0025EF81 /* MyGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewCell.swift; sourceTree = "<group>"; };
+		FAE64F4B23A1859C00AE88B7 /* CircleShadowImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShadowImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +82,14 @@
 		FA40379E239ED21A002E765F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA78E3E423B4D6C5003DA2D6 /* Section.swift */,
 				FA4037A9239ED7E9002E765F /* Friend.swift */,
 				FA1A688E239FB8F20074669D /* ListOfMyFriends.swift */,
 				FA4037A1239ED451002E765F /* Group.swift */,
 				FA4037A5239ED796002E765F /* ListOfMyGroups.swift */,
 				FA4037A7239ED7CF002E765F /* ListOfAllGroups.swift */,
+				FA6ECC0D23B63246007A4484 /* News.swift */,
+				FA6ECC0F23B632A7007A4484 /* ListOfNews.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +113,7 @@
 		FA64EC8D239932D7005537A0 /* Vk-App */ = {
 			isa = PBXGroup;
 			children = (
+				FAE64F4A23A1856000AE88B7 /* Custom Views */,
 				FA40379E239ED21A002E765F /* Model */,
 				FA850A602399C8DC00DC225E /* Controllers */,
 				FA850A632399C91D00DC225E /* Cells */,
@@ -107,10 +127,20 @@
 			path = "Vk-App";
 			sourceTree = "<group>";
 		};
+		FA6ECC0823B627FB007A4484 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				FA6ECC0923B62826007A4484 /* NewsTableViewCell.swift */,
+				FA6ECC0A23B62826007A4484 /* NewsTableViewCell.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		FA850A602399C8DC00DC225E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				FA850A4E2399480300DC225E /* LoginFormViewController.swift */,
+				FA6ECC0623B627C3007A4484 /* NewsTableViewController.swift */,
 				FA850A612399C8F400DC225E /* Friends */,
 				FA850A622399C8FD00DC225E /* Groups */,
 			);
@@ -140,6 +170,7 @@
 			children = (
 				FA850A642399C92F00DC225E /* Friends */,
 				FA850A652399C93D00DC225E /* Groups */,
+				FA6ECC0823B627FB007A4484 /* News */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -160,6 +191,15 @@
 				FA4037AB239EDE2D002E765F /* AllGroupsTableViewCell.swift */,
 			);
 			path = Groups;
+			sourceTree = "<group>";
+		};
+		FAE64F4A23A1856000AE88B7 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAE64F4B23A1859C00AE88B7 /* CircleShadowImage.swift */,
+				FA78E3E623B52225003DA2D6 /* LikeButton.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +262,7 @@
 			files = (
 				FA64EC9B239932D9005537A0 /* LaunchScreen.storyboard in Resources */,
 				FA64EC98239932D9005537A0 /* Assets.xcassets in Resources */,
+				FA6ECC0C23B62826007A4484 /* NewsTableViewCell.xib in Resources */,
 				FA64EC96239932D7005537A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,15 +278,22 @@
 				FA1A688F239FB8F20074669D /* ListOfMyFriends.swift in Sources */,
 				FA850A552399B76C00DC225E /* MyGroupsTableViewController.swift in Sources */,
 				FA4037A2239ED451002E765F /* Group.swift in Sources */,
+				FA78E3E723B52225003DA2D6 /* LikeButton.swift in Sources */,
 				FABB83AE23A1395500B0EAB6 /* MyFriendsViewController.swift in Sources */,
+				FA6ECC0E23B63246007A4484 /* News.swift in Sources */,
 				FABB83B223A13FE000B0EAB6 /* FriendsHomepageCollectionViewController.swift in Sources */,
 				FA850A572399B7D500DC225E /* AllGroupsTableViewController.swift in Sources */,
+				FA6ECC0B23B62826007A4484 /* NewsTableViewCell.swift in Sources */,
+				FA6ECC0723B627C3007A4484 /* NewsTableViewController.swift in Sources */,
 				FA4037A6239ED796002E765F /* ListOfMyGroups.swift in Sources */,
+				FAE64F4C23A1859C00AE88B7 /* CircleShadowImage.swift in Sources */,
+				FA78E3E523B4D6C5003DA2D6 /* Section.swift in Sources */,
 				FADAB1892399D07E0025EF81 /* MyGroupsTableViewCell.swift in Sources */,
 				FA850A4F2399480300DC225E /* LoginFormViewController.swift in Sources */,
 				FABB83B423A1400C00B0EAB6 /* FriendsHomepageCollectionViewCell.swift in Sources */,
 				FABB83B023A139B100B0EAB6 /* MyFriendsTableViewCell.swift in Sources */,
 				FA4037AC239EDE2D002E765F /* AllGroupsTableViewCell.swift in Sources */,
+				FA6ECC1023B632A7007A4484 /* ListOfNews.swift in Sources */,
 				FA64EC8F239932D7005537A0 /* AppDelegate.swift in Sources */,
 				FA4037A8239ED7CF002E765F /* ListOfAllGroups.swift in Sources */,
 				FA64EC91239932D7005537A0 /* SceneDelegate.swift in Sources */,

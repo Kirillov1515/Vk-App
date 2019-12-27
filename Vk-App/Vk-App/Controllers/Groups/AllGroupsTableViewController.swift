@@ -10,6 +10,8 @@ import UIKit
 
 class AllGroupsTableViewController: UITableViewController {
 
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,7 +23,7 @@ class AllGroupsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllGroupsTableViewCell", for: indexPath) as? AllGroupsTableViewCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllGroupsTableViewCell", for: indexPath) as? AllGroupsTableViewCell else { return UITableViewCell() }
         cell.allGroupsAvatar.image = UIImage(named: listOfAllGroups[indexPath.row].avatarPath)
         cell.allGroupsName.text = listOfAllGroups[indexPath.row].name
         return cell
